@@ -1,26 +1,33 @@
 # Incubator Business Development
 
-An original editorial-style website concept and responsive one-page build.
+A bespoke editorial-style business development website with a warm nude, sand, mocha, espresso and bronze identity.
 
-## Design direction
-- Warm nude, sand and soft-ivory surfaces
-- Mocha and espresso contrast sections
-- Muted bronze details
-- Editorial serif headlines paired with clean sans-serif body typography
-- Deliberate asymmetry, thin rules and numbered content instead of repeated generic cards
-- No fabricated client logos, testimonials, awards or performance statistics
+## Design concept
+The website is built around an editorial “business field notes” concept rather than a conventional template landing page. It uses:
+- Custom vector contour artwork in the hero
+- Numbered editorial chapters and asymmetrical page composition
+- An interactive business-stage pathfinder
+- Workstream descriptions focused on real business questions
+- A four-part working method
+- The original package names: Business Foundation, Complete Business Launch, Premium Incubation
+- Warm neutral surfaces balanced with dark mocha and espresso sections
 
 ## Page structure
-1. Hero and working principles
-2. Business-stage pathways
-3. Core areas of support
-4. Four-step working approach
-5. Engagement options
-6. About Incubator
-7. Enquiry form
+1. Hero / positioning
+2. Incubator perspective
+3. Interactive business-stage pathfinder
+4. Areas of work
+5. Working method
+6. Original package options
+7. Closing message
+8. Enquiry form
 
-## Before launch
-Please confirm the business's final service list, the proposed working method, and whether engagement options accurately describe how Incubator works. The enquiry form currently opens the visitor's email application and uses hello@incubator.co.za as a placeholder address; replace it with the confirmed business email before publishing. No enquiries are stored by this static site.
+## Important launch checks
+- Confirm that the service descriptions and working method accurately describe the business.
+- Confirm package inclusions, deliverables and pricing before publishing them.
+- Replace `hello@incubator.co.za` with the confirmed contact email if different.
+- The form opens the visitor's email application; this static site does not store submissions.
+- Add genuine project examples, team details and approved client evidence when available. No testimonials, client logos or business performance claims have been invented.
 
 ## GitHub Pages
-Enable GitHub Pages in **Settings → Pages**, choose **Deploy from a branch**, select `main` and `/(root)`, then save.
+Enable GitHub Pages under **Settings → Pages**, choose **Deploy from a branch**, select `main` and `/(root)`, then save.
