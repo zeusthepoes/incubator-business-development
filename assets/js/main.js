@@ -120,3 +120,23 @@ if (enquiryForm) {
     window.location.href = "mailto:hello@incubator.co.za?subject=" + subject + "&body=" + encodeURIComponent(body);
   });
 }
+
+
+/* Subtle reveal-on-scroll: content remains visible when motion is reduced or observers are unavailable. */
+const revealTargets = document.querySelectorAll(
+  ".manifesto-main, .pathfinder-heading, .pathfinder-layout, .work-row, .method-step, .package-entry, .closing-copy, .closing-action, .contact-copy, .enquiry-form"
+);
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+if ("IntersectionObserver" in window && !reduceMotion) {
+  document.documentElement.classList.add("reveal-ready");
+  revealTargets.forEach((item) => item.classList.add("reveal-up"));
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: "0px 0px -35px 0px" });
+  revealTargets.forEach((item) => revealObserver.observe(item));
+}
